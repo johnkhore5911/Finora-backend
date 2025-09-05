@@ -109,3 +109,7 @@ app.listen(PORT, () => {
   console.log(`Server is running and listening on port ${PORT}`);
   console.log('Ready to receive BitGo webhooks at /webhook/bitgo');
 });
+
+app.get('/', (req, res) => {
+  res.send('Finora backend running...');
+});
